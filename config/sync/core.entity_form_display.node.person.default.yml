@@ -10,12 +10,14 @@ dependencies:
     - field.field.node.person.field_image
     - field.field.node.person.field_ip_address
     - field.field.node.person.field_last_name
+    - field.field.node.person.field_link
     - image.style.thumbnail
     - node.type.person
   module:
     - content_moderation
     - datetime
     - image
+    - link
     - path
 id: node.person.default
 targetEntityType: node
@@ -82,6 +84,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_link:
+    weight: 38
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   path:
     type: path

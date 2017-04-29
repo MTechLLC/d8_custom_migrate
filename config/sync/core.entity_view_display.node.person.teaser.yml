@@ -11,11 +11,13 @@ dependencies:
     - field.field.node.person.field_image
     - field.field.node.person.field_ip_address
     - field.field.node.person.field_last_name
+    - field.field.node.person.field_link
     - image.style.thumbnail
     - node.type.person
   module:
     - datetime
     - image
+    - link
     - user
 id: node.person.teaser
 targetEntityType: node
@@ -63,8 +65,20 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-  links:
+  field_link:
+    type: link
     weight: 5
+    region: content
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  links:
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

@@ -1,17 +1,16 @@
-uuid: 30fe595e-1235-468f-9504-3f51ee0ddd28
+uuid: fe80d561-89a2-4387-b3a5-c5e727ba99b4
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
+    - link
     - node
-id: node.field_dob
-field_name: field_dob
+id: node.field_link
+field_name: field_link
 entity_type: node
-type: datetime
-settings:
-  datetime_type: date
-module: datetime
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true
